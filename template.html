@@ -64,7 +64,7 @@
                 <div ng-if="timeline.settings.authorNameLinksToEmail"
                      class="lb-author__name">
                     <a href="mailto:{{post.original_creator.email}}"
-                       ng-bind="post.original_creator[timeline.settings.authorNameFormat]"></a>
+                       ng-bind="post.original_creator[timeline.settings.authorNameFormat]" target="_blank"></a>
                 </div>
             </div>
             <div class="lb-post-permalink">
