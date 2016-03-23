@@ -576,6 +576,12 @@ article blockquote li:before {
             animation: fadeIt 5s ease-in-out;
 }
 /* Languages settings */
+.cs .sorting-bar__orders {
+    padding-left: 65px;
+}
+.nl .sorting-bar__orders {
+    padding-left: 70px;
+}
 .ro .sorting-bar__orders {
     padding-left: 95px;
 }
@@ -585,3 +591,4 @@ article blockquote li:before {
 .fr .sorting-bar__orders {
     padding-left: 50px;
 }
+
