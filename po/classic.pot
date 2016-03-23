@@ -8,7 +8,7 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: template.html:28
+#: template.html:33
 msgid "Comment"
 msgstr ""
 
@@ -24,11 +24,15 @@ msgstr ""
 msgid "Editorial"
 msgstr ""
 
-#: template.html:142
+#: template.html:176
+msgid "Highlight post"
+msgstr ""
+
+#: template.html:258
 msgid "Load more posts"
 msgstr ""
 
-#: template.html:145
+#: template.html:261
 msgid "Loading"
 msgstr ""
 
@@ -42,10 +46,6 @@ msgstr ""
 
 #: template.html:17
 msgid "Newest first"
-msgstr ""
-
-#: template.html:45
-msgid "No post for now."
 msgstr ""
 
 #: template.html:21
@@ -64,9 +64,9 @@ msgstr ""
 msgid "Post a comment"
 msgstr ""
 
-#: template.html:53
-msgid "See one new post"
-msgid_plural "See {{$count}} new posts"
+#: template.html:58
+msgid "See one new update"
+msgid_plural "See {{$count}} new update"
 msgstr[0] ""
 msgstr[1] ""
 
