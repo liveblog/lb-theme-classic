@@ -21,6 +21,30 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Sort by:": "Řazení:",
   "Your comment was sent for approval.": "Váš text byl úspěšně odeslán. Čeká na schválení."
 });
+  gettextCatalog.setStrings('de', {
+  "Cancel": "Abbrechen",
+  "Comment": "Kommentar",
+  "Comment *": "Kommentar",
+  "Comment should be maximum 300 characters in length.": "Kommentar darf maximal 300 Zeichen lang sein.",
+  "Editorial": "Redaktionell",
+  "Load more posts": "Mehr Einträge laden",
+  "Loading": "Lade",
+  "Name *": "Name",
+  "Name should be maximum 30 characters in length.": "Name darf maximal 30 Zeichen lang sein",
+  "Newest first": "Neueste zuerst",
+  "No posts for now.": "Kein Beitrag vorhanden",
+  "Oldest first": "Älteste zuerst",
+  "Please fill in your Comment.": "Bitte Kommentar hier eintragen",
+  "Please fill in your Name.": "Bitte Namen hier eintragen",
+  "Post a comment": "Kommentar posten",
+  "See one new update": [
+    "Neuen Beitrag anzeigen",
+    "Neue Beiträge anzeigen"
+  ],
+  "Send": "Abschicken",
+  "Sort by:": "Ordnen nach",
+  "Your comment was sent for approval.": "Ihr Kommentar wartet auf Freischaltung,"
+});
   gettextCatalog.setStrings('fr', {
   "Cancel": "Annuler",
   "Comment": "Commentaire",
@@ -32,10 +56,15 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Name *": "Nom *",
   "Name should be maximum 30 characters in length.": "Le nom ne peut excéder 30 signes",
   "Newest first": "Le plus récent d'abord",
+  "No post for now.": "Aucun message pour le moment.",
   "Oldest first": "Plus ancien en premier",
   "Please fill in your Comment.": "Votre commentaire.",
   "Please fill in your Name.": "Votre nom.",
   "Post a comment": "Envoyer un commentaire",
+  "See one new post": [
+    "Voir le nouveau message",
+    "Voir {{$count}} nouveaux messages"
+  ],
   "Send": "Envoyer",
   "Sort by:": "Trier par:",
   "Your comment was sent for approval.": "Votre commentaire a été envoyé et est en attente de validation."
