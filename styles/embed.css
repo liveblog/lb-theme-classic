@@ -382,6 +382,7 @@ button.active {
 /* text */
 article {
     font-size: 14px;
+    overflow: hidden;
 }
 article b {
     font-weight: bold;
