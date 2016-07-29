@@ -13,5 +13,5 @@
             <figcaption translate>{{ item.meta.caption }} credit: {{ item.meta.credit }}
         </figure>
     </div>
-    <article ng-switch-default lb-bind-html html-content="{{ item.text | outboundAnchors }}"></article>
+    <article ng-switch-default lb-bind-html html-content="{{ item.text | outboundAnchors | fixMarkup }}"></article>
 </div>
