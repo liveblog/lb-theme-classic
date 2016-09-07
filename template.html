@@ -41,9 +41,9 @@
             </div>
             <button
                 ng-if="timeline.settings.canComment"
-                class="btn ng-cloak"
+                class="btn comment ng-cloak"
                 ng-class="{'active': timeline.comment}"
-                ng-click="timeline.comment = !timeline.comment" translate>Comment</button>
+                ng-click="timeline.comment = !timeline.comment"><i class="fa fa-comment"></i>{{ :: "Comment" | translate }}</button>
         </div>
         <div class="header-bar__logo">
             <a href="https://www.sourcefabric.org/liveblog/" target="_blank">
