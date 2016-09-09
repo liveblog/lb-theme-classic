@@ -66,8 +66,8 @@
             infinite-scroll-immediate-check="true">
             <div class="lb-post load-new-posts"
                  ng-click="timeline.applyUpdates()"
-                 ng-show="timeline.settings.loadNewPostsManually && timeline.newPosts.length > 0"
-                 translate translate-n="timeline.newPosts.length"
+                 ng-show="timeline.settings.loadNewPostsManually && (timeline.newPosts.length > 0 || timeline.newStickyPosts.length > 0)"
+                 translate translate-n="timeline.newPosts.length + timeline.newStickyPosts.length"
                  translate-plural="See {{$count}} new updates" ng-cloak>
                 See one new update
             </div>
