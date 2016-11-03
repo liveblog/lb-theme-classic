@@ -1,115 +1,113 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Live Blog by Sourcefabric\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Karel Petrak <karel.petrak@sourcefabric.org>\n"
-"Language-Team: Live Blog <liveblog@sourcefabric.org>\n"
-"Language: cs\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
 "X-Generator: Poedit 1.8.11\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nb\n"
 
 #: comments.html:38
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr "Avbryt"
 
 #: template.html:42
 msgid "Comment"
-msgstr "Váš příspěvek"
+msgstr "Kommentar"
 
 #: comments.html:28
 msgid "Comment *"
-msgstr "Text *"
+msgstr "Kommentar*"
 
 #: comments.html:32
 msgid "Comment should be maximum 300 characters in length."
-msgstr "Maximální délka textu je 300 znaků."
+msgstr "Kommentarer kan være inntil 300 tegn"
 
 #: main.js:49 template.html:13
 msgid "Editorial"
-msgstr "redakční"
+msgstr "Redaksjonelt"
 
 #: template.html:96
 msgid "Load more posts"
-msgstr "Načíst další"
+msgstr "Henter flere poster"
 
 #: template.html:99
 msgid "Loading"
-msgstr "Načítám"
+msgstr "Henter"
 
 #: comments.html:20
 msgid "Name *"
-msgstr "Jméno *"
+msgstr "Navn*"
 
 #: comments.html:24
 msgid "Name should be maximum 30 characters in length."
-msgstr "Maximální délka jména je 30 znaků."
+msgstr "Navn kan ikke ha mer enn 30 tegn"
 
 #: main.js:52 template.html:17
 msgid "Newest first"
-msgstr "nejnovější"
+msgstr "Nyeste først"
 
 #: template.html:59
 msgid "No posts for now."
-msgstr "Žádné příspěvky."
+msgstr "Ingen poster for øyeblikket"
 
 #: main.js:55 template.html:21
 msgid "Oldest first"
-msgstr "nejstarší"
+msgstr "Eldste først"
 
 #: template.html:83
 msgid "One pinned post"
 msgid_plural "{{$count}} pined posts"
-msgstr[0] "Jeden připnutý příspěvek"
-msgstr[1] "{{$count}} připnuté příspěvky"
-msgstr[2] "{{$count}} připnutých příspěvků"
+msgstr[0] "Én post festet til toppen"
+msgstr[1] "{{$count}} poster festet til toppen"
 
 #: comments.html:31
 msgid "Please fill in your Comment."
-msgstr "Napište váš text."
+msgstr "Skriv inn din kommentar"
 
 #: comments.html:23
 msgid "Please fill in your Name."
-msgstr "Napište své jméno."
+msgstr "Skriv inn navn"
 
 #: comments.html:15
 msgid "Post a comment"
-msgstr "Otázka / komentář"
+msgstr "Post en kommentar"
 
 #: template.html:67
 msgid "See one new update"
 msgid_plural "See {{$count}} new updates"
-msgstr[0] "Zobraz 1 nový příspěvek"
-msgstr[1] "Zobraz {{$count}} nové příspěvky"
-msgstr[2] "Zobraz {{$count}} nových příspěvků"
+msgstr[0] "Se én ny oppdatering"
+msgstr[1] "Se {{$count}} nye oppdateringer"
 
 #: comments.html:39
 msgid "Send"
-msgstr "Odeslat"
+msgstr "Send"
 
 #: template.html:38
 msgid "Show all posts"
-msgstr "Zobrazit všechny"
+msgstr "Vis alle poster"
 
 #: template.html:37
 msgid "Show highlighted post only"
-msgstr "Zobraz jen zvýrazněné příspěvky"
+msgstr "Vis bare høydepunkter"
 
 #: template.html:11 template.html:27
 msgid "Sort by:"
-msgstr "Řazení:"
+msgstr "Sortér etter:"
 
 #: posts.html:27
 msgid "Updated {{post.content_updated_date | prettifyIsoDate}}"
-msgstr "Aktualizace {{post.content_updated_date | prettifyIsoDate}}"
+msgstr "Oppdatert {{post.content_updated_date | prettifyIsoDate}}"
 
 #: comments.html:7
 msgid "Your comment was sent for approval."
-msgstr "Váš text byl úspěšně odeslán. Čeká na schválení."
+msgstr "Din kommentar er sendt til godkjenning"
 
 #: item.html:13
 msgid "{{ item.meta.caption }} credit: {{ item.meta.credit }}"
-msgstr "{{ item.meta.caption }} autor: {{ item.meta.credit }}"
+msgstr "{{ item.meta.caption }} credit: {{ item.meta.credit }}"
