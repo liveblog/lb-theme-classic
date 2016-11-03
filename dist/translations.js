@@ -7,19 +7,34 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Comment": "Váš příspěvek",
   "Comment *": "Text *",
   "Comment should be maximum 300 characters in length.": "Maximální délka textu je 300 znaků.",
-  "Editorial": "podle redakce",
+  "Editorial": "redakční",
   "Load more posts": "Načíst další",
   "Loading": "Načítám",
   "Name *": "Jméno *",
   "Name should be maximum 30 characters in length.": "Maximální délka jména je 30 znaků.",
-  "Newest first": "od nejnovějších",
-  "Oldest first": "od nejstarších",
+  "Newest first": "nejnovější",
+  "No posts for now.": "Žádné příspěvky.",
+  "Oldest first": "nejstarší",
+  "One pinned post": [
+    "Jeden připnutý příspěvek",
+    "{{$count}} připnuté příspěvky",
+    "{{$count}} připnutých příspěvků"
+  ],
   "Please fill in your Comment.": "Napište váš text.",
   "Please fill in your Name.": "Napište své jméno.",
   "Post a comment": "Otázka / komentář",
+  "See one new update": [
+    "Zobraz 1 nový příspěvek",
+    "Zobraz {{$count}} nové příspěvky",
+    "Zobraz {{$count}} nových příspěvků"
+  ],
   "Send": "Odeslat",
+  "Show all posts": "Zobrazit všechny",
+  "Show highlighted post only": "Zobraz jen zvýrazněné příspěvky",
   "Sort by:": "Řazení:",
-  "Your comment was sent for approval.": "Váš text byl úspěšně odeslán. Čeká na schválení."
+  "Updated {{post.content_updated_date | prettifyIsoDate}}": "Aktualizace {{post.content_updated_date | prettifyIsoDate}}",
+  "Your comment was sent for approval.": "Váš text byl úspěšně odeslán. Čeká na schválení.",
+  "{{ item.meta.caption }} credit: {{ item.meta.credit }}": "{{ item.meta.caption }} autor: {{ item.meta.credit }}"
 });
   gettextCatalog.setStrings('de', {
   "Cancel": "Abbrechen",
@@ -90,6 +105,38 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Send": "Verzenden",
   "Sort by:": "Sorteer:",
   "Your comment was sent for approval.": "Uw reactie is ontvangen ter beoordeling."
+});
+  gettextCatalog.setStrings('no', {
+  "Cancel": "Avbryt",
+  "Comment": "Kommentar",
+  "Comment *": "Kommentar*",
+  "Comment should be maximum 300 characters in length.": "Kommentarer kan være inntil 300 tegn",
+  "Editorial": "Redaksjonelt",
+  "Load more posts": "Henter flere poster",
+  "Loading": "Henter",
+  "Name *": "Navn*",
+  "Name should be maximum 30 characters in length.": "Navn kan ikke ha mer enn 30 tegn",
+  "Newest first": "Nyeste først",
+  "No posts for now.": "Ingen poster for øyeblikket",
+  "Oldest first": "Eldste først",
+  "One pinned post": [
+    "Én post festet til toppen",
+    "{{$count}} poster festet til toppen"
+  ],
+  "Please fill in your Comment.": "Skriv inn din kommentar",
+  "Please fill in your Name.": "Skriv inn navn",
+  "Post a comment": "Post en kommentar",
+  "See one new update": [
+    "Se én ny oppdatering",
+    "Se {{$count}} nye oppdateringer"
+  ],
+  "Send": "Send",
+  "Show all posts": "Vis alle poster",
+  "Show highlighted post only": "Vis bare høydepunkter",
+  "Sort by:": "Sortér etter:",
+  "Updated {{post.content_updated_date | prettifyIsoDate}}": "Oppdatert {{post.content_updated_date | prettifyIsoDate}}",
+  "Your comment was sent for approval.": "Din kommentar er sendt til godkjenning",
+  "{{ item.meta.caption }} credit: {{ item.meta.credit }}": "{{ item.meta.caption }} credit: {{ item.meta.credit }}"
 });
   gettextCatalog.setStrings('ro', {
   "Cancel": "Anulează",
