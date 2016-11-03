@@ -7,10 +7,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.5.4\n"
 "Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nb\n"
+"Language: no\n"
 
 #: comments.html:38
 msgid "Cancel"
