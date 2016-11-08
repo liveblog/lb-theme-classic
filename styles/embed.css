@@ -557,6 +557,9 @@ article blockquote li:before {
 .nl .sorting-bar__orders {
     padding-left: 50px;
 }
+.no .sorting-bar__orders {
+    padding-left: 75px;
+}
 /* Remove this is angular-gettext is updated */
 [translate]{visibility:hidden !important;}
 
