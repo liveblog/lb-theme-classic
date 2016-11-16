@@ -1,34 +1,34 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Language-Team: \n"
-"MIME-Version: 1.0\n"
-"X-Generator: Poedit 1.5.4\n"
 "Last-Translator: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Team: \n"
 "Language: no\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: comments.html:38
+#: comments.html:37
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: template.html:42
+#: template.html:46
 msgid "Comment"
 msgstr "Kommentar"
 
-#: comments.html:28
+#: comments.html:27
 msgid "Comment *"
 msgstr "Kommentar*"
 
-#: comments.html:32
+#: comments.html:31
 msgid "Comment should be maximum 300 characters in length."
 msgstr "Kommentarer kan være inntil 300 tegn"
 
-#: main.js:49 template.html:13
+#: main.js:50 template.html:13
 msgid "Editorial"
 msgstr "Redaksjonelt"
 
@@ -40,15 +40,15 @@ msgstr "Henter flere poster"
 msgid "Loading"
 msgstr "Henter"
 
-#: comments.html:20
+#: comments.html:19
 msgid "Name *"
 msgstr "Navn*"
 
-#: comments.html:24
+#: comments.html:23
 msgid "Name should be maximum 30 characters in length."
 msgstr "Navn kan ikke ha mer enn 30 tegn"
 
-#: main.js:52 template.html:17
+#: main.js:53 template.html:17
 msgid "Newest first"
 msgstr "Nyeste først"
 
@@ -56,25 +56,25 @@ msgstr "Nyeste først"
 msgid "No posts for now."
 msgstr "Ingen poster for øyeblikket"
 
-#: main.js:55 template.html:21
+#: main.js:56 template.html:21
 msgid "Oldest first"
 msgstr "Eldste først"
 
 #: template.html:83
 msgid "One pinned post"
-msgid_plural "{{$count}} pined posts"
+msgid_plural "{{$count}} pinned posts"
 msgstr[0] "Én post festet til toppen"
 msgstr[1] "{{$count}} poster festet til toppen"
 
-#: comments.html:31
+#: comments.html:30
 msgid "Please fill in your Comment."
 msgstr "Skriv inn din kommentar"
 
-#: comments.html:23
+#: comments.html:22
 msgid "Please fill in your Name."
 msgstr "Skriv inn navn"
 
-#: comments.html:15
+#: comments.html:14
 msgid "Post a comment"
 msgstr "Post en kommentar"
 
@@ -84,7 +84,7 @@ msgid_plural "See {{$count}} new updates"
 msgstr[0] "Se én ny oppdatering"
 msgstr[1] "Se {{$count}} nye oppdateringer"
 
-#: comments.html:39
+#: comments.html:38
 msgid "Send"
 msgstr "Send"
 
@@ -104,7 +104,7 @@ msgstr "Sortér etter:"
 msgid "Updated {{post.content_updated_date | prettifyIsoDate}}"
 msgstr "Oppdatert {{post.content_updated_date | prettifyIsoDate}}"
 
-#: comments.html:7
+#: comments.html:6
 msgid "Your comment was sent for approval."
 msgstr "Din kommentar er sendt til godkjenning"
 

@@ -79,10 +79,19 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Name *": "Nom *",
   "Name should be maximum 30 characters in length.": "Le nom ne peut excéder 30 signes",
   "Newest first": "Le plus récent d'abord",
+  "No posts for now.": "Aucun message pour le moment.",
   "Oldest first": "Plus ancien en premier",
+  "One pinned post": [
+    "Voir le nouveau message",
+    "Voir {{$count}} nouveaux messages"
+  ],
   "Please fill in your Comment.": "Votre commentaire.",
   "Please fill in your Name.": "Votre nom.",
   "Post a comment": "Envoyer un commentaire",
+  "See one new update": [
+    "Voir le nouveau message",
+    "Voir {{$count}} nouveaux messages"
+  ],
   "Send": "Envoyer",
   "Sort by:": "Trier par:",
   "Your comment was sent for approval.": "Votre commentaire a été envoyé et est en attente de validation."
@@ -98,10 +107,19 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Name *": "Naam *",
   "Name should be maximum 30 characters in length.": "Uw naam kan maximaal 30 tekens lang zijn.",
   "Newest first": "Toon nieuwste eerst",
+  "No posts for now.": "Nog geen berichten beschikbaar.",
   "Oldest first": "Toon oudste eerst",
+  "One pinned post": [
+    "Bekijk nieuw bericht",
+    "Bekijk {{$count}} nieuwe berichten"
+  ],
   "Please fill in your Comment.": "Uw reactie.",
   "Please fill in your Name.": "Vul hier uw naam in.",
   "Post a comment": "Schrijf een reactie",
+  "See one new update": [
+    "Bekijk nieuw bericht",
+    "Bekijk {{$count}} nieuwe berichten"
+  ],
   "Send": "Verzenden",
   "Sort by:": "Sorteer:",
   "Your comment was sent for approval.": "Uw reactie is ontvangen ter beoordeling."
@@ -149,10 +167,21 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Name *": "Numele *",
   "Name should be maximum 30 characters in length.": "Numele nu poate fi mai lung de 30 de caractere.",
   "Newest first": "Cele mai noi",
+  "No posts for now.": "Deocamdata nu sunt articole.",
   "Oldest first": "Cele mai vechi",
+  "One pinned post": [
+    "Vezi un articol nou",
+    "Vezi {{$count}} articole noi",
+    "Vezi {{$count}} de articole noi"
+  ],
   "Please fill in your Comment.": "Completează comentariu.",
   "Please fill in your Name.": "Completează numele.",
   "Post a comment": "Scrie un comentariu",
+  "See one new update": [
+    "Vezi un articol nou",
+    "Vezi {{$count}} articole noi",
+    "Vezi {{$count}} de articole noi"
+  ],
   "Send": "Trimite",
   "Sort by:": "Ordonează după:",
   "Your comment was sent for approval.": "Comentariul tău a fost trimis spre aprobare."
