@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Karel Petrak <karel.petrak@sourcefabric.org>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: comments.html:37
 msgid "Cancel"
@@ -110,4 +110,4 @@ msgstr "Ihr Kommentar wartet auf Freischaltung,"
 
 #: item.html:13
 msgid "{{ item.meta.caption }} credit: {{ item.meta.credit }}"
-msgstr "{{ item.meta.caption }} kredit: {{ item.meta.credit }}"
+msgstr "{{ item.meta.caption }} Bild: {{ item.meta.credit }}"
