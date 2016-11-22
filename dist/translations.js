@@ -66,7 +66,7 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Sort by:": "Ordnen nach",
   "Updated {{post.content_updated_date | prettifyIsoDate}}": "Aktualisiert am {{post.content_updated_date | prettifyIsoDate}}",
   "Your comment was sent for approval.": "Ihr Kommentar wartet auf Freischaltung,",
-  "{{ item.meta.caption }} credit: {{ item.meta.credit }}": "{{ item.meta.caption }} kredit: {{ item.meta.credit }}"
+  "{{ item.meta.caption }} credit: {{ item.meta.credit }}": "{{ item.meta.caption }} Bild: {{ item.meta.credit }}"
 });
   gettextCatalog.setStrings('fr', {
   "Cancel": "Annuler",
