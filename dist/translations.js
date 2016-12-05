@@ -68,6 +68,38 @@ angular.module('gettext').run(['gettextCatalog', function (gettextCatalog) {
   "Your comment was sent for approval.": "Ihr Kommentar wartet auf Freischaltung,",
   "{{ item.meta.caption }} credit: {{ item.meta.credit }}": "{{ item.meta.caption }} Bild: {{ item.meta.credit }}"
 });
+  gettextCatalog.setStrings('fi', {
+  "Cancel": "Peruuta",
+  "Comment": "Kommentoi",
+  "Comment *": "Kommentti *",
+  "Comment should be maximum 300 characters in length.": "Kommentin enimmäispituus on 300 merkkiä.",
+  "Editorial": "Toimituksellinen",
+  "Load more posts": "Lataa lisää julkaisuja",
+  "Loading": "Lataa",
+  "Name *": "Nimi *",
+  "Name should be maximum 30 characters in length.": "Nimen enimmäispituus on 30 merkkiä.",
+  "Newest first": "Uusimmat ensin",
+  "No posts for now.": "Ei uusia julkaisuja.",
+  "Oldest first": "Vanhimmat ensin",
+  "One pinned post": [
+    "Yksi kiinnitetty julkaisu",
+    "{{$count}} kiinnitettyä julkaisua"
+  ],
+  "Please fill in your Comment.": "Lisää kommenttisi.",
+  "Please fill in your Name.": "Lisää nimesi.",
+  "Post a comment": "Lähetä kommentti",
+  "See one new update": [
+    "Lataa yksi uusi julkaisu",
+    "Lataa {{$count}} uutta julkaisua"
+  ],
+  "Send": "Lähetä",
+  "Show all posts": "Näytä kaikki julkaisut",
+  "Show highlighted post only": "Näytä vain korostettu julkaisu",
+  "Sort by:": "Järjestä:",
+  "Updated {{post.content_updated_date | prettifyIsoDate}}": "Päivitetty {{post.content_updated_date | prettifyIsoDate}}",
+  "Your comment was sent for approval.": "Kommenttisi lähetettiin hyväksyttäväksi.",
+  "{{ item.meta.caption }} credit: {{ item.meta.credit }}": "{{ item.meta.caption }} © {{ item.meta.credit }}"
+});
   gettextCatalog.setStrings('fr', {
   "Cancel": "Annuler",
   "Comment": "Commentaire",
