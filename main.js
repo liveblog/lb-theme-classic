@@ -151,12 +151,15 @@
 
         var vm = this;
         var all_posts = vm.posts();
-        _.each(all_posts, function(post) {
-            // Show gallery only for posts with more than 1 image.
-            post.showGallery = config.settings.showGallery && _.filter(post.items, function(item) {
-                return item.item_type === 'image';
-            }).length > 1;
-        });
+        vm.imageItemNo = function(post) {
+            var no = 0;
+            angular.forEach(post.items, function(item) {
+                if (item.item_type === 'image') {
+                    no++;
+                }
+            });
+            return no;
+        } 
         vm.all_posts = all_posts;
     }
 
