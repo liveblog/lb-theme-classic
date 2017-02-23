@@ -159,7 +159,11 @@
                 }
             });
             return (no > 1) && vm.timeline.settings.showGallery;
-        } 
+        }
+
+        vm.isAd = function(post) {
+            return (post.mainItem.item_type.indexOf('Advertisement') === -1)
+        }
         vm.all_posts = all_posts;
     }
 
