@@ -151,14 +151,14 @@
 
         var vm = this;
         var all_posts = vm.posts();
-        vm.imageItemNo = function(post) {
+        vm.showGallery = function(post) {
             var no = 0;
             angular.forEach(post.items, function(item) {
                 if (item.item_type === 'image') {
                     no++;
                 }
             });
-            return no;
+            return (no > 1) && vm.timeline.settings.showGallery;
         } 
         vm.all_posts = all_posts;
     }
