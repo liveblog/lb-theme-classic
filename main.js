@@ -168,7 +168,14 @@
         .constant('assets_simplified_path', true)
         .run(['gettextCatalog', 'config', function (gettextCatalog, config) {
             gettextCatalog.setCurrentLanguage(config.settings.language);
-            moment.locale(config.settings.language);
+            // moment js uses a diffrent country code for Norks
+            // added a mapper for this, internal Norks is `no` and for moment is `nn`.
+            var momentMapper = { 'no': 'nn' },
+                momentLanguage = config.settings.language;
+            if (momentMapper[momentLanguage]) {
+                momentLanguage = momentMapper[momentLanguage];
+            }
+            moment.locale(momentLanguage);
         }])
         .run(['$rootScope', function($rootScope){
             angular.element(document).on("click", function(e) {
