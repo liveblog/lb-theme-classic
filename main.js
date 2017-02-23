@@ -168,6 +168,7 @@
         .constant('assets_simplified_path', true)
         .run(['gettextCatalog', 'config', function (gettextCatalog, config) {
             gettextCatalog.setCurrentLanguage(config.settings.language);
+            moment.locale(config.settings.language);
         }])
         .run(['$rootScope', function($rootScope){
             angular.element(document).on("click", function(e) {
