@@ -26,7 +26,7 @@
         }
 
         vm.enhance = function(all) {
-            if(config.output) {
+            if(config.output && config.output.collection) {
                 // @TODO: add the settings on output.
                 var settings = config.output.settings || {frequency: 4, order: -1};
                 angular.forEach(config.output.collection.advertisements, function(ad, index){
