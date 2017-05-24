@@ -85,6 +85,7 @@
         angular.extend(vm, {
             templateDir: config.assets_root,
             blog: transformBlog(config.blog),
+            output: config.output,
             loading: true,
             finished: false,
             highlightsOnly: false,
