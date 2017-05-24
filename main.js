@@ -8,9 +8,9 @@
         var PERMALINK_DELIMITER = config.settings.permalinkDelimiter || '?';
         var DEFAULT_ORDER = config.settings.postOrder; // newest_first, oldest_first or editorial
         var UPDATE_MANUALLY = config.settings.loadNewPostsManually;
-        var UPDATE_STICKY_MANUALLY = typeof config.settings.loadNewStickyPostsManually === 
-        'boolean' ? config.settings.loadNewStickyPostsManually : config.settings.loadNewPostsManually;
-        var UPDATE_EVERY = 10 * 1000; // retrieve update interval in millisecond
+        var UPDATE_STICKY_MANUALLY = !config.settings.livestream &&
+                                        config.settings.loadNewPostsManually;
+        var UPDATE_EVERY = 1000; // retrieve update interval in millisecond
         var vm = this;
         var pagesManager = new PagesManager(POSTS_PER_PAGE, DEFAULT_ORDER, false),
             permalink = new Permalink(pagesManager, PERMALINK_DELIMITER);
@@ -211,7 +211,8 @@
         }
 
         vm.isAd = function(post) {
-            return (post.mainItem.item_type.indexOf('Advertisement') === -1)
+            return (post.mainItem.item_type.indexOf('Advertisement') !== -1) ||
+                    post.mainItem.item_type.indexOf('Advertisment') !== -1
         }
 
         vm.allPosts = function() {
@@ -251,7 +252,8 @@
                 scope: {
                     ident: '=',
                     item: '=',
-                    gallery: '='
+                    gallery: '=',
+                    hideInfo: '@'
                 },
                 templateUrl: asset.templateUrl('views/item.html'),
             }
@@ -273,7 +275,8 @@
                 bindToController: {
                     posts: '=',
                     enhance: '=',
-                    timeline: '='
+                    timeline: '=',
+                    hideInfo: '@'
                 },
                 controller: PostsCtrl,
                 controllerAs: 'ctrl',
