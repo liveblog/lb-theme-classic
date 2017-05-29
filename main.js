@@ -1,7 +1,26 @@
 (function(angular) {
     'use strict';
-    TimelineCtrl.$inject = ['$interval', 'PagesManager', 'blogs', 'config', '$anchorScroll', '$timeout', 'Permalink', 'transformBlog', 'gettext', 'outputs'];
-    function TimelineCtrl($interval, PagesManager, blogsService, config, $anchorScroll, $timeout, Permalink, transformBlog, gettext, outputsService) {
+    TimelineCtrl.$inject = ['$interval', 
+                            'PagesManager',
+                            'blogs',
+                            'config',
+                            '$anchorScroll',
+                            '$timeout', 'Permalink',
+                            'transformBlog',
+                            'gettext',
+                            'outputs',
+                            'advertisements'];
+    function TimelineCtrl($interval,
+                          PagesManager,
+                          blogsService,
+                          config,
+                          $anchorScroll,
+                          $timeout,
+                          Permalink,
+                          transformBlog,
+                          gettext,
+                          outputsService,
+                          advertisementsService) {
 
         var POSTS_PER_PAGE = config.settings.postsPerPage;
         var STICKY_POSTS_PER_PAGE = 100;
@@ -10,7 +29,7 @@
         var UPDATE_MANUALLY = config.settings.loadNewPostsManually;
         var UPDATE_STICKY_MANUALLY = !config.settings.livestream &&
                                         config.settings.loadNewPostsManually;
-        var UPDATE_EVERY = 1000; // retrieve update interval in millisecond
+        var UPDATE_EVERY = 10000; // retrieve update interval in millisecond
         var vm = this;
         var pagesManager = new PagesManager(POSTS_PER_PAGE, DEFAULT_ORDER, false),
             permalink = new Permalink(pagesManager, PERMALINK_DELIMITER);
@@ -47,10 +66,40 @@
             return all;
         };
 
+        function fetchAdvertisements(output) {
+            angular.forEach(output.collection.advertisements, function(ad){
+                advertisementsService.get({advertisementId: ad.advertisement_id},
+                    function(advertisement){
+                        let old = _.find(config.output.collection.advertisements, function(o){
+                            return (o.advertisement_id == advertisement._id);
+                        });
+                        angular.extend(old, advertisement);
+                    }
+                );
+            });
+        }
+
         function retriveOutput() {
             if (config.output && config.output._id) {
+                // if collections advertiments weren't fetched, `_id` property isn't set.
+                if (config.output.collection &&
+                    config.output.collection.advertisements.length &&
+                    !config.output.collection.advertisements[0]._id) {
+                        fetchAdvertisements(config.output);
+                }
                 outputsService.get({id: config.output._id}, function(output) {
-                    if (!angular.equals(config.output, output)) {
+                    // if collections are diffrent identify by _etags fetch ads.
+                    if (config.output.collection &&
+                        output.collection &&
+                        config.output.collection._etag !== output.collection._etag) {
+                            fetchAdvertisements(output);
+                    }
+                    // if the new fetch output has a collection fetch ads.
+                    if (!config.output.collection && output.collection) {
+                            fetchAdvertisements(output);
+                    }
+
+                    if (config.output._etag !== output._etag) {
                         config.output = output;
                         applyOutputStyle();
                     }
@@ -217,6 +266,9 @@
         }
 
         vm.isAd = function(post) {
+            if(!post.mainItem || !post.mainItem.item_type) {
+                return;
+            }
             return (post.mainItem.item_type.indexOf('Advertisement') !== -1) ||
                     post.mainItem.item_type.indexOf('Advertisment') !== -1
         }
