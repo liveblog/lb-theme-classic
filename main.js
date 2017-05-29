@@ -52,12 +52,12 @@
                 var settings = config.output.settings || {frequency: 4, order: -1},
                     ads = config.output.collection.advertisements;
                 if(settings.order === 1) {
-                    for(let index, i=0, count=all.length; i < count; i+=(settings.frequency+1)) {
+                    for(var index, i=0, count=all.length; i < count; i+=(settings.frequency+1)) {
                         index = i/(settings.frequency+1) % ads.length;
                         all.splice(i, 0, ads[index]);
                     }
                 } else {
-                    for(let index, i=all.length; i > 0; i-=(settings.frequency+1)) {
+                    for(var index, i=all.length; i > 0; i-=(settings.frequency+1)) {
                         index = i/(settings.frequency+1) % ads.length;
                         all.splice(i, 0, ads[index]);
                     }
@@ -70,8 +70,8 @@
             angular.forEach(output.collection.advertisements, function(ad){
                 advertisementsService.get({advertisementId: ad.advertisement_id},
                     function(advertisement){
-                        let old = _.find(config.output.collection.advertisements, function(o){
-                            return (o.advertisement_id == advertisement._id);
+                        var old = _.find(config.output.collection.advertisements, function(o){
+                            return (o.advertisement_id === advertisement._id);
                         });
                         angular.extend(old, advertisement);
                     }
