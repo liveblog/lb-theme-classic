@@ -26,18 +26,23 @@
         }
 
         vm.enhance = function(all) {
+            if(!all.length) {
+                return;
+            }
             if(config.output && config.output.collection) {
-                // @TODO: add the settings on output.
-                var settings = config.output.settings || {frequency: 4, order: -1};
-                angular.forEach(config.output.collection.advertisements, function(ad, index){
-                    if(all.length > index * (settings.frequency+1) ) {
-                        if(settings.order === 1) {
-                            all.splice(index * (settings.frequency+1), 0, ad);
-                        } else {
-                            all.splice(all.length - index * (settings.frequency+1), 0, ad);
-                        }
+                var settings = config.output.settings || {frequency: 4, order: -1},
+                    ads = config.output.collection.advertisements;
+                if(settings.order === 1) {
+                    for(let index, i=0, count=all.length; i < count; i+=(settings.frequency+1)) {
+                        index = i/(settings.frequency+1) % ads.length;
+                        all.splice(i, 0, ads[index]);
                     }
-                });
+                } else {
+                    for(let index, i=all.length; i > 0; i-=(settings.frequency+1)) {
+                        index = i/(settings.frequency+1) % ads.length;
+                        all.splice(i, 0, ads[index]);
+                    }
+                }
             }
             return all;
         };
