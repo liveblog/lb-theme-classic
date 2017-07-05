@@ -198,7 +198,9 @@
                 vm.highlightsOnly = !vm.highlightsOnly;
                 vm.loading = true;
                 vm.finished = false;
-                stickyPagesManager.changeHighlight(vm.highlightsOnly);
+                if (!config.settings.livestream) {
+                    stickyPagesManager.changeHighlight(vm.highlightsOnly);
+                }
                 pagesManager.changeHighlight(vm.highlightsOnly).then(function(data) {
                     vm.loading = false;
                     vm.finished = data._meta.total <= data._meta.max_results * data._meta.page;
