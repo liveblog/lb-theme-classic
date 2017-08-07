@@ -425,6 +425,7 @@ article blockquote p {
 article blockquote p:before {
     font-family: Georgia,"Times New Roman", Serif;
     font-size: 3em;
+    content: '\201C';
     position: absolute;
     top: 0.3em;
     left: -0.6em;
