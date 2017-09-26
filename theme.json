@@ -265,6 +265,13 @@
             "type": "checkbox",
             "default": false,
             "help": "if the users will see the video autoplay for livestream"
+        },
+        {
+            "name": "showSyndicatedAuthor",
+            "label": "Show syndicated author",
+            "type": "checkbox",
+            "default": false,
+            "help": "If the users will see the syndicated author"
         }
     ]
 }
