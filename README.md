@@ -2,7 +2,7 @@
 
 ## Compatibility
 
-For Live Blog version 3.2.2 or previous, make sure to use <a href="https://github.com/liveblog/lb-theme-classic/tree/b70ff79a38e3c6772b77ff8234e7b9f3b16e275c">version 3.2.1 of the Classic theme</a>. 
+For Live Blog version 3.2.2 or previous, make sure to use <a href="https://github.com/liveblog/lb-theme-classic/releases/tag/v3.2.1">version 3.2.1 of the Classic theme</a>. 
 
 The latest version of the Classic theme only works with Live Blog version 3.3 or higher. 
 
